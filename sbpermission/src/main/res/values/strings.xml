@@ -1,0 +1,7 @@
+<resources>
+    <string name="denied_dialog_message">[Settings] > [Permissions] Please activate the appropriate permissions.</string>
+    <string name="window_dialog_message">Permit drawing over other apps</string>
+    <string name="denied_dialog_positive_button">Settings</string>
+    <string name="denied_dialog_negative_button">Close</string>
+    <string name="window_dialog_negative_button">Settings</string>
+</resources>

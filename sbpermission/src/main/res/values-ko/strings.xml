@@ -1,0 +1,7 @@
+<resources>
+    <string name="denied_dialog_message">[설정] > [권한]에서 해당 권한을 활성화해주세요.</string>
+    <string name="window_dialog_message">다른 앱 위에 그리기</string>
+    <string name="denied_dialog_positive_button">설정</string>
+    <string name="denied_dialog_negative_button">닫기</string>
+    <string name="window_dialog_negative_button">설정</string>
+</resources>
