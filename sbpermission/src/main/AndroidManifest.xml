@@ -3,6 +3,8 @@
     <application>
         <activity
                 android:name="com.github.stonybean.PermissionCheckActivity"
+                android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
+                android:screenOrientation="unspecified"
                 android:theme="@style/Theme.Transparent"/>
     </application>
 </manifest>

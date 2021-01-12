@@ -1,3 +1,3 @@
 <resources>
-    <string name="app_name">sbpermission-kt</string>
+    <string name="appName" translatable="false">sbpermission-kt</string>
 </resources>
