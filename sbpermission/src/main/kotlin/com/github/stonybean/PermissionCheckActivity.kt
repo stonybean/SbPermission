@@ -75,12 +75,12 @@ class PermissionCheckActivity : AppCompatActivity() {
 
         // if message(getIntent) is null, set the default message string
         if (TextUtils.isEmpty(deniedDialogMessage)) {
-            deniedDialogMessage = getString(R.string.denied_dialog_message)
+            deniedDialogMessage = getString(R.string.deniedDialogMessage)
         }
 
         // if message(getIntent) is null, set the default message string
         if (TextUtils.isEmpty(windowDialogMessage)) {
-            windowDialogMessage = getString(R.string.window_dialog_message)
+            windowDialogMessage = getString(R.string.windowDialogMessage)
         }
 
         // check window (overlay) permission
@@ -123,7 +123,7 @@ class PermissionCheckActivity : AppCompatActivity() {
         AlertDialog.Builder(this, R.style.Theme_AppCompat_Light_Dialog_Alert)
                 .setMessage(message)
                 .setCancelable(false)
-                .setNegativeButton(R.string.window_dialog_negative_button) { _, _ ->
+                .setNegativeButton(R.string.windowDialogNegativeButton) { _, _ ->
                     val intent = Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION)
                     intent.data = Uri.parse("package:$packageName")
                     startActivityForResult(intent, REQUEST_SYSTEM_ALERT_WINDOW)
@@ -214,7 +214,7 @@ class PermissionCheckActivity : AppCompatActivity() {
         if (showDeniedDialog) {
             dialogBuilder = AlertDialog.Builder(this, R.style.Theme_AppCompat_Light_Dialog_Alert)
             dialogBuilder!!.setCancelable(false)
-                    .setPositiveButton(R.string.denied_dialog_positive_button
+                    .setPositiveButton(R.string.deniedDialogPositiveButton
                     ) { _, _ ->
                         try {
                             val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
@@ -226,7 +226,7 @@ class PermissionCheckActivity : AppCompatActivity() {
                             startActivityForResult(intent, REQUEST_SYSTEM_SETTINGS)
                         }
                     }
-                    .setNegativeButton(R.string.denied_dialog_negative_button
+                    .setNegativeButton(R.string.deniedDialogNegativeButton
                     ) { dialog, _ ->
                         dialog.cancel()
                         finish()

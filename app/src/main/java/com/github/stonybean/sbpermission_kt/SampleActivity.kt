@@ -3,7 +3,6 @@ package com.github.stonybean.sbpermission_kt
 import android.Manifest
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import com.github.stonybean.PermissionBuilder
 import com.github.stonybean.PermissionListener
 
@@ -47,7 +46,7 @@ class SampleActivity : AppCompatActivity() {
         test.setWindowPermission(true)
             .setWindowDialogMessage("message..")
             .setDeniedDialog(true)
-            .setDeniedDialogMessage(R.string.denied_dialog_message)
+            .setDeniedDialogMessage(R.string.deniedDialogMessage)
             .setPermissions(
                 Manifest.permission.CAMERA,
                 Manifest.permission.CALL_PHONE,
